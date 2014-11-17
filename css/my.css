@@ -140,6 +140,10 @@ ul.nav-tabs.affix{
     left: 0px;
 }
 
+.invisible {
+  fill-opacity: 0;
+}
+
 /*Animation*/
 @-webkit-keyframes slideInDown {
     0% {
