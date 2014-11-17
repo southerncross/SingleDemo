@@ -9,6 +9,7 @@
   <link href="../css/bootstrap.min.css" rel="stylesheet">
   <link href="../css/font-awesome.min.css" rel="stylesheet">
   <link href="../css/animate.css" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
     <!--[if lt IE 9]>
   <script src="js/html5shiv.js"></script>
   <script src="js/respond.min.js"></script>
@@ -36,8 +37,8 @@
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
               房屋展示<span class="caret"></span>
-           </a>
-           <ul class="dropdown-menu">
+            </a>
+            <ul class="dropdown-menu">
              <li><a href="type.html">按户型展示</a></li>
              <li class="divider"></li>
              <li><a href="location.html">按地块展示</a></li>
@@ -45,169 +46,160 @@
              <li><a href="building.html">按楼房展示</a></li>
            </ul>
          </li>
-          <li><a href="query.html">房屋查询</a></li>
-          <li><a href="purchase.html">房屋申购</a></li>
-        </ul>
-        <form class="navbar-form navbar-left" role="search">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="搜索">
-          </div>
-          <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-        </form>
-        <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>XXX老师<span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="#">修改密码</a></li>
-              <li class="divider"></li>
-              <li><a href="#">退出系统</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
+         <li><a href="query.html">房屋查询</a></li>
+         <li><a href="purchase.html">房屋申购</a></li>
+       </ul>
+       <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="搜索">
+        </div>
+        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>XXX老师<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">修改密码</a></li>
+            <li class="divider"></li>
+            <li><a href="#">退出系统</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
-  <section id="query">
-    <div class="container">
-      <div class="page-header">
-        <h1 class="nav-padding">房屋查询<small>点击查询按钮以筛选房屋</small></h1>
-      </div>
-      <div>
-        <div class="row">
-          <div class="col-md-2 col-sm-6">
-            <h3>建筑面积</h3>
-          </div>
-          <div class="col-md-10 col-sm-6 query-area">
-            <button class="btn btn-default query-btn">90</button>
-            <button class="btn btn-default query-btn">120</button>
-            <button class="btn btn-default query-btn">140</button>
-            <button class="btn btn-default query-btn">180</button>
-          </div>
-        </div> 
-        <div class="row">
-          <div class="col-md-2 col-sm-6">
-            <h3>地块</h3>
-          </div>
-          <div class="col-md-10 col-sm-6 query-location">
-            <button class="btn btn-default query-btn">E'</button>
-            <button class="btn btn-default query-btn">E''</button>
-            <button class="btn btn-default query-btn">F</button>
-            <button class="btn btn-default query-btn">G</button>
-          </div>
-        </div>   
-        <div class="row">
-          <div class="col-md-2 col-sm-6">
-            <h3>户型</h3>
-          </div>
-          <div class="col-md-10 col-sm-6 query-type">
-            <button class="btn btn-default query-btn">午A</button>
-            <button class="btn btn-default query-btn">辰A</button>
-            <button class="btn btn-default query-btn">辰B</button>
-            <button class="btn btn-default query-btn">子A</button>
-          </div>
-        </div> 
-        <div class="row">
-          <div class="col-md-2 col-sm-6">
-            <h3>楼号</h3>
-          </div>
-          <div class="col-md-10 col-sm-6 query-building">
-            <table class="table table-default">
-              <thead>
-                <tr><th>地块</th><th>楼号</th></tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>E'</td>
-                  <td>
-                    <button class="btn btn-default query-btn">E1</button>
-                    <button class="btn btn-default query-btn">E2</button>
-                    <button class="btn btn-default query-btn">E3</button>
-                    <button class="btn btn-default query-btn">E4</button>
-                    <button class="btn btn-default query-btn">E5</button>
-                    <button class="btn btn-default query-btn">E6</button>
-                    <button class="btn btn-default query-btn">E7</button>
-                    <button class="btn btn-default query-btn">E8</button>
-                    <button class="btn btn-default query-btn">E9</button>
-                    <button class="btn btn-default query-btn">E10</button>
-                    <button class="btn btn-default query-btn">E11</button>
-                    <button class="btn btn-default query-btn">E12</button>
-                    <button class="btn btn-default query-btn">E13</button>
-                    <button class="btn btn-default query-btn">E14</button>
-                    <button class="btn btn-default query-btn">E15</button>
-                    <button class="btn btn-default query-btn">E16</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>E'</td>
-                  <td>
-                    <button class="btn btn-default query-btn"s>E17</button>
-                    <button class="btn btn-default query-btn"s>E18</button>
-                    <button class="btn btn-default query-btn"s>E19</button>
-                    <button class="btn btn-default query-btn"s>E20</button>
-                    <button class="btn btn-default query-btn"s>E21</button>
-                    <button class="btn btn-default query-btn"s>E22</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>F</td>
-                  <td>
-                    <button class="btn btn-default query-btn">F1</button>
-                    <button class="btn btn-default query-btn">F2</button>
-                    <button class="btn btn-default query-btn">F3</button>
-                    <button class="btn btn-default query-btn">F4</button>
-                    <button class="btn btn-default query-btn">F5</button>
-                    <button class="btn btn-default query-btn">F6</button>
-                    <button class="btn btn-default query-btn">F7</button>
-                    <button class="btn btn-default query-btn">F8</button>
-                    <button class="btn btn-default query-btn">F9</button>
-                    <button class="btn btn-default query-btn">F10</button>
-                    <button class="btn btn-default query-btn">F11</button>
-                    <button class="btn btn-default query-btn">F12</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>G</td>
-                  <td>
-                    <button class="btn btn-default query-btn">G1</button>
-                    <button class="btn btn-default query-btn">G2</button>
-                    <button class="btn btn-default query-btn">G3</button>
-                    <button class="btn btn-default query-btn">G4</button>
-                    <button class="btn btn-default query-btn">G5</button>
-                    <button class="btn btn-default query-btn">G6</button>
-                    <button class="btn btn-default query-btn">G7</button>
-                    <button class="btn btn-default query-btn">G8</button>
-                    <button class="btn btn-default query-btn">G9</button>
-                    <button class="btn btn-default query-btn">G10</button>
-                    <button class="btn btn-default query-btn">G11</button>
-                    <button class="btn btn-default query-btn">G12</button>
-                  </td>
-                </tr>
-              </tbody>
+<section id="query">
+  <div class="box">
+    <div class="center">
+      <h2>房屋查询<small>点击查询按钮以筛选房屋</small></h2>
+    </div>
+    <table class="table table-bordered">
+      <tr>
+        <td>建筑面积</td>
+        <td class="query-area">
+          <button class="btn btn-primary query-btn">90</button>
+          <button class="btn btn-primary query-btn">120</button>
+          <button class="btn btn-primary query-btn">140</button>
+          <button class="btn btn-primary query-btn">180</button>
+        </td>
+      </tr>
+      <tr>
+        <td>地块</td>
+        <td class="query-location">
+          <button class="btn btn-primary query-btn">E'</button>
+          <button class="btn btn-primary query-btn">E''</button>
+          <button class="btn btn-primary query-btn">F</button>
+          <button class="btn btn-primary query-btn">G</button>
+        </td>
+      </tr>
+      <tr>
+        <td>户型</td>
+        <td class="query-type">
+          <button class="btn btn-primary query-btn">午A</button>
+          <button class="btn btn-primary query-btn">辰A</button>
+          <button class="btn btn-primary query-btn">辰B</button>
+          <button class="btn btn-primary query-btn">子A</button>
+        </td>
+        <tr>
+          <td>楼号</td>
+          <td>
+            <table class="table table-bordered">
+              <tr>
+                <td>E'地块</td>
+                <td class="query-building">
+                  <button class="btn btn-primary query-btn">E1</button>
+                  <button class="btn btn-primary query-btn">E2</button>
+                  <button class="btn btn-primary query-btn">E3</button>
+                  <button class="btn btn-primary query-btn">E4</button>
+                  <button class="btn btn-primary query-btn">E5</button>
+                  <button class="btn btn-primary query-btn">E6</button>
+                  <button class="btn btn-primary query-btn">E7</button>
+                  <button class="btn btn-primary query-btn">E8</button>
+                  <button class="btn btn-primary query-btn">E9</button>
+                  <button class="btn btn-primary query-btn">E10</button>
+                  <button class="btn btn-primary query-btn">E11</button>
+                  <button class="btn btn-primary query-btn">E12</button>
+                  <button class="btn btn-primary query-btn">E13</button>
+                  <button class="btn btn-primary query-btn">E14</button>
+                  <button class="btn btn-primary query-btn">E15</button>
+                  <button class="btn btn-primary query-btn">E16</button>
+                </td>
+              </tr>
+              <tr>
+                <td>E''地块</td>
+                <td class="query-building">
+                  <button class="btn btn-primary query-btn">E17</button>
+                  <button class="btn btn-primary query-btn">E18</button>
+                  <button class="btn btn-primary query-btn">E19</button>
+                  <button class="btn btn-primary query-btn">E20</button>
+                  <button class="btn btn-primary query-btn">E21</button>
+                  <button class="btn btn-primary query-btn">E22</button>
+                </td>
+              </tr>
+              <tr>
+                <td>G地块</td>
+                <td class="query-building">
+                  <button class="btn btn-primary query-btn">G1</button>
+                  <button class="btn btn-primary query-btn">G2</button>
+                  <button class="btn btn-primary query-btn">G3</button>
+                  <button class="btn btn-primary query-btn">G4</button>
+                  <button class="btn btn-primary query-btn">G5</button>
+                  <button class="btn btn-primary query-btn">G6</button>
+                  <button class="btn btn-primary query-btn">G7</button>
+                  <button class="btn btn-primary query-btn">G8</button>
+                  <button class="btn btn-primary query-btn">G9</button>
+                  <button class="btn btn-primary query-btn">G10</button>
+                  <button class="btn btn-primary query-btn">G11</button>
+                  <button class="btn btn-primary query-btn">G12</button>
+                </td>
+              </tr>
+              <tr>
+                <td>F地块</td>
+                <td class="query-building">
+                  <button class="btn btn-primary query-btn">F1</button>
+                  <button class="btn btn-primary query-btn">F2</button>
+                  <button class="btn btn-primary query-btn">F3</button>
+                  <button class="btn btn-primary query-btn">F4</button>
+                  <button class="btn btn-primary query-btn">F5</button>
+                  <button class="btn btn-primary query-btn">F6</button>
+                  <button class="btn btn-primary query-btn">F7</button>
+                  <button class="btn btn-primary query-btn">F8</button>
+                  <button class="btn btn-primary query-btn">F9</button>
+                  <button class="btn btn-primary query-btn">F10</button>
+                  <button class="btn btn-primary query-btn">F11</button>
+                  <button class="btn btn-primary query-btn">F12</button>
+                </td>
+              </tr>
             </table>
-          </div>
-        </div> 
-      </div>
-      <div class="center">
-        <table class="table table-bordered">
-          <thead>
-            <tr>
-              <th>户型</th><th>地块</th><th>面积</th><th>楼号</th><th>单元号</th><th>门牌号</th><th>居室</th><th>操作</th>
-            </tr>
-          </thead>
-          <tbody id="query-table">
-          </tbody>
-        </table>
-      </div>
-    </div><!--/.container-->
-  </section><!--/#query-->
+          </td>
+        </tr>
+      </table>
+    </div>
+  </section>
 
-  <div id="back-top">
-    <a href="#">Top<span class="glyphicon glyphicon-arrow-up"></span></a>
+  <section>
+    <div class="box">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>户型</th><th>地块</th><th>面积</th><th>楼号</th><th>单元号</th><th>门牌号</th><th>居室</th><th>操作</th>
+          </tr>
+        </thead>
+        <tbody id="query-table">
+        </tbody>
+      </table>
+    </div>
   </div>
+</section><!--/#query-->
 
-  <script src="../js/jquery.js"></script>
-  <script src="../js/bootstrap.min.js"></script>
-  <script src="../js/headroom.min.js"></script>
+<div id="back-top">
+  <a href="#">Top<span class="glyphicon glyphicon-arrow-up"></span></a>
+</div>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/data.js"></script>
+<script src="../js/query.js"></script>
 </body>
 </html>

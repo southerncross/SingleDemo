@@ -22,7 +22,7 @@ a {
 }
 .btn {
   font-weight: 300;
-  border: 0;
+  border: 1;
 }
 .btn.btn-primary {
   background-color: #52b6ec;
