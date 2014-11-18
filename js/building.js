@@ -54,11 +54,13 @@ jQuery(function($) {
         fill: '#fff'
       });
       for (var i in map) {
+        // Draw polygon
         svg.paper.path('M ' + map[i].x + ' ' + map[i].y + ' ' + map[i].path).attr({
           stroke: '#000',
           strokeWidth: 1,
           fill: map[i].color
         });
+        // Draw mask layer
         svg.paper.path('M ' + map[i].x + ' ' + map[i].y + ' ' + map[i].path).attr({
           fill: '#00f',
           'fill-opacity': 0

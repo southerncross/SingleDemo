@@ -459,6 +459,22 @@ a:focus {
 .icon-social:hover {
   color: #fff;
 }
+
+.img-type {
+  max-height: 300px;
+}
+
+.img-lg {
+  maxheight: 500px;
+}
+
+.img-md {
+  maxheight: 300px;
+}
+
+.img-sm {
+  maxheight: 100px;
+}
 /*
 .navbar-default {
   background: #fff;
