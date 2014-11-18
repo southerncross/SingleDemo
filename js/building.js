@@ -32,19 +32,68 @@ jQuery(function($) {
         {x: 100, y: 170},
         {x: 190, y: 170}
       ];
-      var width = 300;
-      var height = 250;
+      var width = 800;
+      var height = 400;
       var offsetX = 20;
-      var offsetY = 40;
+      var offsetY = 110;
       var svg = Snap(width, height);
 
-      svg.paper.rect(0, 0, width, height).attr({
+      // background of whole map
+      var mapX = 320;
+      var mapY = 0;
+      var map = [
+        {name: "E'", color: '#FF8000', x: 350, y: 280, path: 'h 150 v 100 h -150 Z'},
+        {name: "E''", color: '#0080FF', x: 500, y: 150, path: 'h 100 v 80 h -100 Z'},
+        {name: "G'", color: '#00BB00', x: 650, y: 50, path: 'h 20 l 50 80 h -70 Z'},
+        {name: "F", color: '#AE57A4', x: 630, y: 280, path: 'h 100 l -20 70 h -80 Z'},
+      ];
+      svg.paper.rect(mapX, mapY, width - mapX, height).attr({
         stroke: '#000',
         strokeWidth: 2,
         'stroke-dasharray': "5 , 5",
         fill: '#fff'
       });
-      svg.paper.text(130, 20, "E'地块");
+      for (var i in map) {
+        svg.paper.path('M ' + map[i].x + ' ' + map[i].y + ' ' + map[i].path).attr({
+          stroke: '#000',
+          strokeWidth: 1,
+          fill: map[i].color
+        });
+        svg.paper.path('M ' + map[i].x + ' ' + map[i].y + ' ' + map[i].path).attr({
+          fill: '#00f',
+          'fill-opacity': 0
+        }).mouseout(function() {
+          this.animate({
+            'fill-opacity': 0
+          }, 200);
+        }).mouseover(function() {
+          this.animate({
+            'fill-opacity': 1
+          }, 200);
+        }).click(function() {
+          $('#modal-ec').modal('show');
+        });
+        svg.paper.text(map[i].x, map[i].y - 20, map[i].name + '地块');
+      }
+      svg.paper.line(map[0].x + 150, map[0].y, 290, 80).attr({
+        stroke: "#000",
+        strokeWidth: 2,
+        'stroke-dasharray': "5 , 5"
+      });
+      svg.paper.line(map[0].x, map[0].y + 100, 290, 330).attr({
+        stroke: "#000",
+        strokeWidth: 2,
+        'stroke-dasharray': "5 , 5"
+      });
+
+      // background of location E'
+      svg.paper.rect(0, 80, 290, 250).attr({
+        stroke: '#000',
+        strokeWidth: 2,
+        'stroke-dasharray': "5 , 5",
+        fill: '#fff'
+      });
+      svg.paper.text(100 + offsetX, offsetY, "E'地块");
       for (var id in ec) {
         svg.paper.text(ec[id].x + offsetX, ec[id].y - 10 + offsetY, 'E' + (Number(id) + 1));
         var b = svg.paper.path('M ' + (Number(ec[id].x) + offsetX) + ' ' + (Number(ec[id].y) + offsetY) + ' ' + path).attr({
@@ -105,6 +154,7 @@ jQuery(function($) {
         }).mouseover(function() {
           this.animate({'stroke-opacity': 1}, 200);
         }).click(function() {
+          $('#modal-wuA').modal('show');
         });
         svg.paper.rect(150, 80 + 50 * i, 60, 30).attr({
           fill: '#63b8ff'
@@ -121,6 +171,7 @@ jQuery(function($) {
         }).mouseover(function() {
           this.animate({'stroke-opacity': 1}, 200);
         }).click(function() {
+          $('#modal-wuA').modal('show');
         });
         // 2
         svg.paper.rect(240, 80 + 50 * i, 70, 30).attr({
@@ -138,6 +189,7 @@ jQuery(function($) {
         }).mouseover(function() {
           this.animate({'stroke-opacity': 1}, 200);
         }).click(function() {
+          $('#modal-wuA').modal('show');
         });
         svg.paper.rect(320, 80 + 50 * i, 70, 30).attr({
           fill: '#66cd00'
@@ -154,6 +206,7 @@ jQuery(function($) {
         }).mouseover(function() {
           this.animate({'stroke-opacity': 1}, 200);
         }).click(function() {
+          $('#modal-wuA').modal('show');
         });
         // 3
         svg.paper.rect(410, 80 + 50 * i, 70, 30).attr({
@@ -171,6 +224,7 @@ jQuery(function($) {
         }).mouseover(function() {
           this.animate({'stroke-opacity': 1}, 200);
         }).click(function() {
+          $('#modal-wuA').modal('show');
         });
         svg.paper.rect(490, 80 + 50 * i, 70, 30).attr({
           fill: '#ee3a8c'
@@ -187,6 +241,7 @@ jQuery(function($) {
         }).mouseover(function() {
           this.animate({'stroke-opacity': 1}, 200);
         }).click(function() {
+          $('#modal-wuA').modal('show');
         });
         // 4
         svg.paper.rect(580, 80 + 50 * i, 60, 30).attr({
@@ -204,6 +259,7 @@ jQuery(function($) {
         }).mouseover(function() {
           this.animate({'stroke-opacity': 1}, 200);
         }).click(function() {
+          $('#modal-wuA').modal('show');
         });
         svg.paper.rect(650, 80 + 50 * i, 60, 30).attr({
           fill: '#eec900'
@@ -220,6 +276,7 @@ jQuery(function($) {
         }).mouseover(function() {
           this.animate({'stroke-opacity': 1}, 200);
         }).click(function() {
+          $('#modal-wuA').modal('show');
         });
       }
 
