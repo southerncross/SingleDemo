@@ -5,6 +5,7 @@ jQuery(function($) {
   });
 
   $(document).ready(function() {
+    /*
     $('#index').show();
     $('#content').hide();
 
@@ -15,6 +16,7 @@ jQuery(function($) {
       $('#content').show();
       $('#index').hide();
     });
+*/
 
     drawLocation();
     drawDetail();
@@ -284,19 +286,27 @@ jQuery(function($) {
 
       svg.paper.rect(120, 420, 30, 30).attr({
         fill: '#66cd00'
-      });
+      }).click(function() {
+          $('#modal-wuA').modal('show');
+        });
       svg.paper.text(80, 470, '午A(两室一厅一卫)');
       svg.paper.rect(300, 420, 30, 30).attr({
         fill: '#63b8ff'
-      });
+      }).click(function() {
+          $('#modal-wuA').modal('show');
+        });
       svg.paper.text(260, 470, '辰A(两室两厅一卫)');
       svg.paper.rect(480, 420, 30, 30).attr({
         fill: '#ee3a8c'
-      });
+      }).click(function() {
+          $('#modal-wuA').modal('show');
+        });
       svg.paper.text(440, 470, '辰B(三室两厅两卫)');
       svg.paper.rect(660, 420, 30, 30).attr({
         fill: '#eec900'
-      });
+      }).click(function() {
+          $('#modal-wuA').modal('show');
+        });
       svg.paper.text(620, 470, '子A(四室三厅两卫)');
 
       $('#svg-detail-e1').append(svg.node);
