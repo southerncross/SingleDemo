@@ -158,7 +158,7 @@ jQuery(function($) {
         }).mouseover(function() {
           this.animate({'stroke-opacity': 1}, 200);
         }).click(function() {
-          $('#modal-wuA').modal('show');
+          $('#modal-ziA').modal('show');
         });
         svg.paper.rect(150, 80 + 50 * i, 60, 30).attr({
           fill: '#63b8ff'
@@ -175,7 +175,7 @@ jQuery(function($) {
         }).mouseover(function() {
           this.animate({'stroke-opacity': 1}, 200);
         }).click(function() {
-          $('#modal-wuA').modal('show');
+          $('#modal-chenA').modal('show');
         });
         // 2
         svg.paper.rect(240, 80 + 50 * i, 70, 30).attr({
@@ -193,7 +193,7 @@ jQuery(function($) {
         }).mouseover(function() {
           this.animate({'stroke-opacity': 1}, 200);
         }).click(function() {
-          $('#modal-wuA').modal('show');
+          $('#modal-chenB').modal('show');
         });
         svg.paper.rect(320, 80 + 50 * i, 70, 30).attr({
           fill: '#66cd00'
@@ -245,7 +245,7 @@ jQuery(function($) {
         }).mouseover(function() {
           this.animate({'stroke-opacity': 1}, 200);
         }).click(function() {
-          $('#modal-wuA').modal('show');
+          $('#modal-chenB').modal('show');
         });
         // 4
         svg.paper.rect(580, 80 + 50 * i, 60, 30).attr({
@@ -263,7 +263,7 @@ jQuery(function($) {
         }).mouseover(function() {
           this.animate({'stroke-opacity': 1}, 200);
         }).click(function() {
-          $('#modal-wuA').modal('show');
+          $('#modal-chenA').modal('show');
         });
         svg.paper.rect(650, 80 + 50 * i, 60, 30).attr({
           fill: '#eec900'
@@ -280,7 +280,7 @@ jQuery(function($) {
         }).mouseover(function() {
           this.animate({'stroke-opacity': 1}, 200);
         }).click(function() {
-          $('#modal-wuA').modal('show');
+          $('#modal-ziA').modal('show');
         });
       }
 

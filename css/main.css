@@ -465,15 +465,15 @@ a:focus {
 }
 
 .img-lg {
-  maxheight: 500px;
+  max-height: 500px;
 }
 
 .img-md {
-  maxheight: 300px;
+  max-height: 300px;
 }
 
 .img-sm {
-  maxheight: 100px;
+  max-height: 100px;
 }
 /*
 .navbar-default {

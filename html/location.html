@@ -11,6 +11,7 @@
   <link href="../css/animate.css" rel="stylesheet">
   <!--<link href="css/prettyPhoto.css" rel="stylesheet">-->
   <link href="../css/main.css" rel="stylesheet">
+  <!--<link href="../css/d3.css" rel="stylesheet">-->
     <!--[if lt IE 9]>
   <script src="js/html5shiv.js"></script>
   <script src="js/respond.min.js"></script>
@@ -111,7 +112,7 @@
 <section>
   <div class="box">
     <div class="row">
-      <div class="col-md-2 side-nav-spy">
+      <div class="col-lg-2 col-md-2 col-sm-0 side-nav-spy">
         <div class="nav-padding"></div>
         <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="650">
           <li class="active"><a href="#location-Ec">E'</a></li>
@@ -120,7 +121,7 @@
           <li><a href="#location-G">G</a></li>
         </ul>
       </div>
-      <div class="col-md-10">
+      <div class="col-lg-10 col-md-10 col-sm-12">
         <div id="location-Ec">
           <div class="center">
             <h2>地块E'</h2>
@@ -141,31 +142,134 @@
           </div>
           <div class="panel panel-default">
             <div class="panel-heading">
-              包含户型
+              地理位置
             </div>
             <div class="panel-body">
-              <div class="row center">
-                <img class="img-responsive" src="../images/demonstrate/E'.png" alt="" >
-              </div>
-              <div class="row center">
-                <img class="img-responsive" src="../images/demonstrate/E'-statistic.png" alt="" >
+              <div class="center" id="svg-location">
               </div>
             </div>
           </div>
-        </div><!--/#location-E'-->
-      </div><!--/.col-->
-    </div><!--/.row-->
-  </div><!--/.box-->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              户型分布
+            </div>
+            <div class="panel-body">
+              <div id="svg-type"></div>
+            </div>
+          </div>
+          <!--
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              D3测试
+            </div>
+            <div class="panel-body">
+              <div id="svg-test"></div>
+            </div>
+          </div>
+        -->
+      </div><!--/#location-E'-->
+    </div><!--/.col-->
+  </div><!--/.row-->
+</div><!--/.box-->
 </section>
 
 <div id="back-top">
   <a href="#">Top<span class="glyphicon glyphicon-arrow-up"></span></a>
 </div>
 
+<div class="modal fade" id="modal-wuA" tabindex="-1" role="dialog" aria-labelledby="modal-wuA-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+          &times;
+        </button>
+        <h4 class="modal-title" id="modal-wuA-label">
+          午A
+        </h4>
+      </div>
+      <div class="modal-body">
+        <p>2室1厅1卫，90平米</p>
+        <p>如需详细信息请点击<a href="type.html#type-wu-A">这里</a></p>
+        <div class="center">
+          <img class="img-thumbnail img-lg" src="../images/demonstrate/wuA.png" alt="">
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /#modal-ec -->
+
+<div class="modal fade" id="modal-chenA" tabindex="-1" role="dialog" aria-labelledby="modal-chenA-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+          &times;
+        </button>
+        <h4 class="modal-title" id="modal-wuA-label">
+          辰A
+        </h4>
+      </div>
+      <div class="modal-body">
+        <p>2室2厅1卫，120平米</p>
+        <p>如需详细信息请点击<a href="type.html">这里</a></p>
+        <div class= "center">
+          <img class="img-thumbnail" src="../images/demonstrate/chenA.png" alt="">
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /#modal-ec -->
+
+<div class="modal fade" id="modal-chenB" tabindex="-1" role="dialog" aria-labelledby="modal-chenB-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+          &times;
+        </button>
+        <h4 class="modal-title" id="modal-wuA-label">
+          辰B
+        </h4>
+      </div>
+      <div class="modal-body">
+        <p>3室2厅1卫，140平米</p>
+        <p>如需详细信息请点击<a href="type.html">这里</a></p>
+        <div class="center">
+          <img class="img-thumbnail" src="../images/demonstrate/chenA.png" alt="">
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /#modal-ec -->
+
+<div class="modal fade" id="modal-ziA" tabindex="-1" role="dialog" aria-labelledby="modal-ziA-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+          &times;
+        </button>
+        <h4 class="modal-title" id="modal-wuA-label">
+          子A
+        </h4>
+      </div>
+      <div class="modal-body">
+        <p>3室3厅2卫，180平米</p>
+        <p>如需详细信息请点击<a href="type.html">这里</a></p>
+        <div class="center">
+          <img class="img-thumbnail" src="../images/demonstrate/chenA.png" alt="">
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /#modal-ec -->
+
 <script src="../js/jquery.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/headroom.min.js"></script>
 <script src="../js/snap.svg-min.js"></script>
+<script src="../js/d3.min.js"></script>
 <script src="../js/location.js"></script>
 </body>
 </html>
