@@ -12,6 +12,33 @@ jQuery(function($) {
       ziA: {name: '子-A', detail: '4室3厅2卫', color: '#ff7575'}
     };
 
+    var types = ['wuA', 'chenA', 'chenB', 'ziA'];
+
+    var pieData = [
+      {type: 'wuA', count: 540},
+      {type: 'chenA', count: 480},
+      {type: 'chenB', count: 480},
+      {type: 'ziA', count: 200}
+    ];
+
+    var histoRawData = [
+      [120, 60, 60, 30],
+      [120, 60, 60, 30],
+      [120, 60, 60, 30],
+      [120, 60, 60, 30],
+      [120, 60, 60, 30],
+      [120, 60, 60, 30],
+      [120, 60, 60, 30],
+      [120, 60, 60, 30],
+      [80, 80, 80, 40],
+      [80, 80, 80, 40],
+      [80, 80, 80, 40],
+      [80, 80, 80, 40],
+      [40, 60, 60, 60],
+      [40, 60, 60, 60],
+      [40, 60, 60, 60]
+    ];
+
     drawMap();
     drawLocation('#svg-location');
     var freqData=[
@@ -30,7 +57,128 @@ jQuery(function($) {
       ,{id:'E13',freq:{wuA:20, chenA:30, chenB:20, ziA: 40}}
       ,{id:'E14',freq:{wuA:20, chenA:30, chenB:20, ziA: 40}}
     ];
-    drawType('#svg-type', freqData);
+    drawPieChart('#svg-pie', pieData);
+    drawHistoGram('#svg-histogram', histoRawData);
+
+    function drawPieChart(id, pData) {
+      var width = 500,
+          height = 300,
+          radius = height / 2;
+
+      var arc = d3.svg.arc()
+            .outerRadius(radius - 10)
+            .innerRadius(0);
+
+      var pie = d3.layout.pie()
+            .sort(null)
+            .value(function(d) {return d.count;});
+
+      var svg = d3.select(id).append('svg')
+            .attr('width', width)
+            .attr('height', height);
+      var chart = svg.append('g')
+            .attr('transform', 'translate(' + radius + ', ' + radius + ')');
+      var g = chart.selectAll('g')
+            .data(pie(pData))
+            .enter()
+            .append('g');
+
+      g.append('path')
+        .attr('d', arc)
+        .style('fill', function(d) {return typeInfo[d.data.type].color;})
+        .style('stroke', '#fff');
+
+      g.append('text')
+        .attr('transform', function(d) {return 'translate(' + arc.centroid(d) + ')';})
+        .text(function(d) {return typeInfo[d.data.type].name;});
+
+      var legend = svg.append('g')
+            .attr('transform', 'translate(' + radius * 2 + ', ' + radius + ')');
+      var l = legend.selectAll('g')
+            .data(pieData)
+            .enter()
+            .append('g');
+      l.append('rect')
+        .attr('fill', function(d) {return typeInfo[d.type].color;})
+        .attr('width', 10)
+        .attr('height', 10)
+        .attr('transform', function(d, i) {
+          return 'translate(' + 50 + ', ' + i * 30 + ')';
+        });
+      l.append('text')
+        .attr('transform', function(d, i) {
+          return 'translate(' + 70 + ', ' + Number(10 + i * 30) + ')';
+        })
+        .text(function(d) {return typeInfo[d.type].name + '(' + typeInfo[d.type].detail + ') ' + d.count;});
+    }
+
+    function drawHistoGram(id, rawData) {
+      var index2BuildingId = function(index) {
+        return 'E' + index;
+      };
+
+      var maxSum = d3.max(rawData, function(d) {
+        return d3.sum(d);
+      });
+
+      var margin = {top: 40, right: 20, bottom: 30, left: 40},
+          width = 800 - margin.left - margin.right,
+          height = 500 - margin.top - margin.bottom;
+
+      var svg = d3.select(id).append('svg')
+            .attr('width', width + margin.left + margin.right)
+            .attr('height', height + margin.top + margin.bottom)
+            .append('g')
+            .attr('transform', 'translate(' + margin.left + ', ' + margin.top + ')');
+
+      var x = d3.scale.ordinal().domain(rawData.map(function(d, i) {return index2BuildingId(i);}))
+            .rangeRoundBands([0, width], .1);
+
+      var y = d3.scale.linear().domain([0, maxSum])
+            .range([0, height]);
+
+      var xAxis = d3.svg.axis()
+            .scale(x)
+            .orient("bottom");
+
+
+
+      var histoData = rawData.map(function(d, i) {
+        var sumY = 0;
+        return d.map(function(dd, ii) {
+          sumY += dd;
+          return {x: x(index2BuildingId(i)), y: height - y(sumY), v: dd, type: types[ii]};
+        });
+      });
+
+      var g = svg.selectAll('g')
+            .data(histoData)
+            .enter()
+            .append('g');
+
+      g.selectAll('rect')
+        .data(function(d) {return d;})
+        .enter()
+        .append('rect')
+        .attr('x', function(d) {return d.x;})
+        .attr('y', function(d) {return d.y;})
+        .attr('width', x.rangeBand())
+        .attr('height', function(d) {return y(d.v);})
+        .style('fill', function(d) {return typeInfo[d.type].color;});
+      g.selectAll('text')
+        .data(function(d) {return d;})
+        .enter()
+        .append('text')
+        .attr('x', function(d) {return d.x + x.rangeBand() / 2;})
+        .attr('y', function(d) {return d.y + y(d.v) / 2;})
+        .text(function(d) {return d.v;})
+        .style('text-anchor', 'middle');
+
+      svg.append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + height + ")")
+        .call(xAxis);
+    }
 
     function drawLocation(id) {
       var width = 640,
@@ -133,8 +281,6 @@ jQuery(function($) {
         {type: 'ziA', x: 210, y: 107}
       ];
 
-
-
       var buildingWidth = 31;
       var buildingHeight = 32;
       // Method 'forEach' is only valid in Firefox and Chrome
@@ -176,8 +322,14 @@ jQuery(function($) {
             fill: typeInfo[lg.type].color,
             stroke: 'black',
             'stroke-width': 2
+          })
+          .click(function(){
+            $('#modal-' + lg.type).modal('show');
           });
-        svg.paper.text(lg.x, lg.y, typeInfo[lg.type].name + '(' + typeInfo[lg.type].detail + ')');
+        svg.paper.text(lg.x, lg.y, typeInfo[lg.type].name + '(' + typeInfo[lg.type].detail + ')')
+          .click(function(){
+            $('#modal-' + lg.type).modal('show');
+          });;
       });
 
       $(id).append(svg.node);
