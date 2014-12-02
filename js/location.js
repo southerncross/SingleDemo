@@ -467,7 +467,7 @@ jQuery(function($) {
               .attr("width", hGDim.w + hGDim.l + hGDim.r)
               .attr("height", hGDim.h + hGDim.t + hGDim.b).append("g")
               .attr("transform", "translate(" + hGDim.l + "," + hGDim.t + ")")
-              .style();;
+              .style();
 
         // create function for x-axis mapping.
         var x = d3.scale.ordinal().rangeRoundBands([0, hGDim.w], 0.1)

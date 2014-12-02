@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<svg width="450" height="220" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <g>
+  <title>E''地块</title>
+  <g id="E20">
+    <text text-anchor="middle" font-size="10" y="20" x="45">E-20</text>
+   <rect fill="#ff8000" stroke="#000000" stroke-width="2" x="35" y="27" width="20" height="27" class="ziA"/>
+   <rect fill="#0080ff" stroke="#000000" stroke-width="2" x="55" y="27" width="20" height="27" class="chenB"/>
+   <rect fill="#00bb00" stroke="#000000" stroke-width="2" x="75" y="27" width="20" height="27" class="chenA"/>
+   <rect fill="#ae57a4" stroke="#000000" stroke-width="2" x="95" y="27" width="20" height="27" class="wuA"/>
+   <rect fill="#ae57a4" stroke="#000000" stroke-width="2" x="115" y="27" width="20" height="27" class="wuA"/>
+   <rect fill="#00bb00" stroke="#000000" stroke-width="2" x="135" y="27" width="20" height="27" class="chenA"/>
+   <rect fill="#0080ff" stroke="#000000" stroke-width="2" x="155" y="27" width="20" height="27" class="chenB"/>
+   <rect fill="#ff8000" stroke="#000000" stroke-width="2" x="175" y="27" width="20" height="27" class="ziA"/>
+  </g>
+  <g id="E21">
+    <text text-anchor="middle" font-size="10" y="20" x="270">E-21</text>
+   <rect fill="#ff8000" stroke="#000000" stroke-width="2" x="260" y="27" width="20" height="27" class="ziA"/>
+   <rect fill="#0080ff" stroke="#000000" stroke-width="2" x="280" y="27" width="20" height="27" class="chenB"/>
+   <rect fill="#00bb00" stroke="#000000" stroke-width="2" x="300" y="27" width="20" height="27" class="chenA"/>
+   <rect fill="#ae57a4" stroke="#000000" stroke-width="2" x="320" y="27" width="20" height="27" class="wuA"/>
+   <rect fill="#ae57a4" stroke="#000000" stroke-width="2" x="340" y="27" width="20" height="27" class="wuA"/>
+   <rect fill="#00bb00" stroke="#000000" stroke-width="2" x="360" y="27" width="20" height="27" class="chenA"/>
+   <rect fill="#0080ff" stroke="#000000" stroke-width="2" x="380" y="27" width="20" height="27" class="chenB"/>
+   <rect fill="#ff8000" stroke="#000000" stroke-width="2" x="400" y="27" width="20" height="27" class="ziA"/>
+  </g>
+  <g id="E18">
+    <text text-anchor="middle" font-size="10" y="90" x="45">E-18</text>
+   <rect fill="#ff8000" stroke="#000000" stroke-width="2" x="35" y="97" width="20" height="27" class="ziA"/>
+   <rect fill="#ae57a4" stroke="#000000" stroke-width="2" x="55" y="97" width="20" height="27" class="wuA"/>
+   <rect fill="#00bb00" stroke="#000000" stroke-width="2" x="75" y="97" width="20" height="27" class="chenA"/>
+   <rect fill="#0080ff" stroke="#000000" stroke-width="2" x="95" y="97" width="20" height="27" class="chenB"/>
+   <rect fill="#0080ff" stroke="#000000" stroke-width="2" x="115" y="97" width="20" height="27" class="chenB"/>
+   <rect fill="#00bb00" stroke="#000000" stroke-width="2" x="135" y="97" width="20" height="27" class="chenA"/>
+   <rect fill="#ae57a4" stroke="#000000" stroke-width="2" x="155" y="97" width="20" height="27" class="wuA"/>
+   <rect fill="#ff8000" stroke="#000000" stroke-width="2" x="175" y="97" width="20" height="27" class="ziA"/>
+   <rect fill="#ff8000" stroke="#000000" stroke-width="2" x="195" y="97" width="20" height="27" class="ziA"/>
+  </g>
+  <g id="E19">
+    <text text-anchor="middle" font-size="10" y="90" x="270">E-19</text>
+   <rect fill="#ff8000" stroke="#000000" stroke-width="2" x="260" y="97" width="20" height="27" class="ziA"/>
+   <rect fill="#0080ff" stroke="#000000" stroke-width="2" x="280" y="97" width="20" height="27" class="chenB"/>
+   <rect fill="#00bb00" stroke="#000000" stroke-width="2" x="300" y="97" width="20" height="27" class="chenA"/>
+   <rect fill="#ae57a4" stroke="#000000" stroke-width="2" x="320" y="97" width="20" height="27" class="wuA"/>
+   <rect fill="#ae57a4" stroke="#000000" stroke-width="2" x="340" y="97" width="20" height="27" class="wuA"/>
+   <rect fill="#00bb00" stroke="#000000" stroke-width="2" x="360" y="97" width="20" height="27" class="chenA"/>
+   <rect fill="#0080ff" stroke="#000000" stroke-width="2" x="380" y="97" width="20" height="27" class="chenB"/>
+   <rect fill="#ff8000" stroke="#000000" stroke-width="2" x="400" y="97" width="20" height="27" class="ziA"/>
+  </g>
+  <g id="E16">
+    <text text-anchor="middle" font-size="10" y="160" x="45">E-16</text>
+   <rect fill="#ff8000" stroke="#000000" stroke-width="2" x="35" y="167" width="20" height="27" class="ziA"/>
+   <rect fill="#0080ff" stroke="#000000" stroke-width="2" x="55" y="167" width="20" height="27" class="chenB"/>
+   <rect fill="#00bb00" stroke="#000000" stroke-width="2" x="75" y="167" width="20" height="27" class="chenA"/>
+   <rect fill="#ae57a4" stroke="#000000" stroke-width="2" x="95" y="167" width="20" height="27" class="wuA"/>
+   <rect fill="#ae57a4" stroke="#000000" stroke-width="2" x="115" y="167" width="20" height="27" class="wuA"/>
+   <rect fill="#00bb00" stroke="#000000" stroke-width="2" x="135" y="167" width="20" height="27" class="chenA"/>
+   <rect fill="#0080ff" stroke="#000000" stroke-width="2" x="155" y="167" width="20" height="27" class="chenB"/>
+   <rect fill="#ff8000" stroke="#000000" stroke-width="2" x="175" y="167" width="20" height="27" class="ziA"/>
+  </g>
+  <g id="E17">
+    <text text-anchor="middle" font-size="10" y="160" x="250">E-17</text>
+   <rect fill="#ff8000" stroke="#000000" stroke-width="2" x="240" y="167" width="20" height="27" class="ziA"/>
+   <rect fill="#ae57a4" stroke="#000000" stroke-width="2" x="260" y="167" width="20" height="27" class="wuA"/>
+   <rect fill="#00bb00" stroke="#000000" stroke-width="2" x="280" y="167" width="20" height="27" class="chenA"/>
+   <rect fill="#0080ff" stroke="#000000" stroke-width="2" x="300" y="167" width="20" height="27" class="chenB"/>
+   <rect fill="#0080ff" stroke="#000000" stroke-width="2" x="320" y="167" width="20" height="27" class="chenB"/>
+   <rect fill="#00bb00" stroke="#000000" stroke-width="2" x="340" y="167" width="20" height="27" class="chenA"/>
+   <rect fill="#ae57a4" stroke="#000000" stroke-width="2" x="360" y="167" width="20" height="27" class="wuA"/>
+   <rect fill="#ff8000" stroke="#000000" stroke-width="2" x="380" y="167" width="20" height="27" class="ziA"/>
+   <rect fill="#ff8000" stroke="#000000" stroke-width="2" x="400" y="167" width="20" height="27" class="ziA"/>
+  </g>
+ </g>
+</svg>
