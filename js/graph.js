@@ -5,66 +5,92 @@
    * option: filter - Indicates which type can be filtered, filtered type will be colored, others will not.
    */
   graph.drawLocation = function(id, svgUrl, option) {
+    $(id).empty();
     d3.xml(svgUrl, 'image/svg+xml', function(error, xml) {
-      if (error)
-        console.log(error); return;
+      if (error) {
+        console.log(error);
+        return;
+      }
       $(id).append(xml.documentElement);
-      d3.selectAll('#svg-test rect').each(function(d) {
+
+      d3.selectAll(id + ' rect').each(function(d) {
         d3.select(this).attr('class') === option.filter || d3.select(this).attr('fill', '#ffffff');
       });
     });
   };
 
-  /**
-   * option: title - {x, y} - Indicates the legend of x axis and axis.
-   */
   graph.drawHistogram = function(id, csvUrl, width, height, option) {
+    var ratio = $(id).width() / width;
+    width *= ratio;
+    height *= ratio;
     var margin = option.hasOwnProperty('margin') ? option.margin : {};
     margin.left = margin.left || 40;
     margin.right = margin.right || 20;
     margin.top = margin.top || 40;
     margin.bottom = margin.bottom || 20;
-    var title = option.hasOwnProperty('title') ? option.title : {};
-    title.x = title.x || '';
-    title.y = title.y || '';
+    var color = option.hasOwnProperty('color') ? option.color : 'orange';
 
     var x = d3.scale.ordinal()
           .rangeRoundBands([0, width - margin.left - margin.right], .1);
 
-    var y = d3.scale.linear()
+    // for axis
+    var ya = d3.scale.linear()
           .range([height - margin.top - margin.bottom, 0]);
+    // for data
+    var yd = d3.scale.linear()
+          .range([0, height - margin.top - margin.bottom]);
 
     var xAxis = d3.svg.axis()
           .scale(x)
           .orient("bottom");
 
     var yAxis = d3.svg.axis()
-          .scale(y)
+          .scale(ya)
           .orient('left');
 
-    var svg = d3.select(id).append('svg')
+    var svg = {};
+
+    if (d3.select(id).selectAll('svg').empty()) {
+      svg = d3.select(id).append('svg')
           .attr({
             'width': width,
             'height': height
           })
           .append('g')
-          .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+          .attr({
+            class: 'canvas',
+            transform: 'translate(' + margin.left + ',' + margin.top + ')'
+          });
+
+      svg.append('g')
+        .attr({
+          class: 'x axis',
+          transform: 'translate(0,' + (height - margin.bottom - margin.top) + ')'
+        });
+
+      svg.append('g')
+        .attr({
+          class: 'y axis'
+        });
+    }
+    else
+      svg = d3.select(id).select('svg').selectAll('.canvas');
 
     d3.tsv(csvUrl, function(d) {
       d.value = +d.value;
       return d;
     }, function(error, data) {
       x.domain(data.map(function(d) {return d.key;}));
-      y.domain([0, d3.max(data, function(d) {return d.value;})]);
+      ya.domain([0, d3.max(data, function(d) {return d.value;})]);
+      yd.domain([0, d3.max(data, function(d) {return d.value;})]);
 
-      svg.append('g')
-        .attr({
-          class: 'x axis',
-          transform: 'translate(0,' + (height - margin.bottom - margin.top) + ')'
-        })
+      svg.selectAll('g.x.axis').transition().duration(200)
         .call(xAxis);
 
-      svg.append('g')
+      svg.selectAll('g.y.axis').transition().duration(200)
+        .call(yAxis);
+
+      /*svg.append('g')
         .attr('class', 'y axis')
         .call(yAxis)
         .append('text')
@@ -74,20 +100,31 @@
           dy: '.71em'
         })
         .text(title.y);
+       */
 
-      svg.selectAll('.bar')
-        .data(data)
-        .enter().append('rect')
+      var delay = function(d, i) {return i * 20;};
+      var bar = svg.selectAll('.bar')
+        .data(data, function(d) {return d.key;});
+      bar.exit()
+        .remove();
+
+      bar.enter().append('rect')
         .attr({
           class: 'bar',
           x: function(d) {return x(d.key);},
           width: x.rangeBand(),
-          y: function(d) {return y(d.value);},
-          height: function(d) {return height - margin.bottom - margin.top - y(d.value);}
+          y: height - margin.bottom - margin.top,
+          height: 0
         })
-        .style('fill', 'orange')
-        .on('mouseout', function() {d3.select(this).style('fill', 'orange');})
-        .on('mouseover', function() {d3.select(this).style('fill', 'orangered');});
+        .style('fill', color)
+        .on('mouseout', function() {d3.select(this).style('opacity', '1');})
+        .on('mouseover', function() {d3.select(this).style('opacity', '0.6');});
+
+      bar.transition().duration(500).delay(delay)
+        .attr({
+          y: function(d) {return height - margin.bottom - margin.top - yd(d.value);},
+          height: function(d) {return yd(d.value);}
+        });
 
       svg.selectAll('.axis path, line')
         .style({
@@ -102,8 +139,16 @@
     });
   };
 
+  /**
+   * option: eventHandler
+   */
   graph.drawPieChart = function(id, csvUrl, width, height, option) {
+    var eventHandler = option.hasOwnProperty('eventHandler') ? option.eventHandler : function() {};
     var svg = {};
+    var ratio = $(id).width() / width;
+    width *= ratio;
+    height *= ratio;
+
     if (d3.select(id).selectAll('svg').empty()) {
       svg = d3.select(id)
         .append('svg')
@@ -143,13 +188,21 @@
     }, function(error, data) {
       // slices
       var slice = d3.select('.slices')
-            .selectAll('path.slice')
+            .selectAll('path')
             .data(pie(data), function(d) {return d.data.key;});
 
       slice.enter()
-        .insert('path')
+        //.insert('path')
+        .append('path')
         .style('fill', function(d) {return d.data.color;})
-        .attr('class', 'slice');
+        .attr('class', 'slice')
+        .on('click', eventHandler)
+        .on('mouseover', function(d) {
+          d3.select(this).attr('opacity', '0.6');
+        })
+        .on('mouseout', function(d) {
+          d3.select(this).attr('opacity', '1');
+        });
 
       slice.transition().duration(1000)
         .attrTween('d', function(d) {

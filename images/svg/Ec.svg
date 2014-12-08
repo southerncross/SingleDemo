@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<svg width="560" height="360" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <g>
+  <title>E'地块</title>
+  <g id="E1">
+    <text text-anchor="middle" font-size="10" y="30" x="38">E-1</text>
+    <rect class="ziA" height="19" width="17" y="35" x="32.5" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+    <rect class="chenA" height="19" width="17" y="35" x="49.5" stroke-width="2" stroke="#000000" fill="#00bb00"/>
+    <rect class="chenB" height="19" width="17" y="35" x="66.5" stroke-width="2" stroke="#000000" fill="#0080ff"/>
+    <rect class="chenB" height="19" width="17" y="35" x="83.5" stroke-width="2" stroke="#000000" fill="#0080ff"/>
+    <rect class="chenA" height="19" width="17" y="35" x="100.5" stroke-width="2" stroke="#000000" fill="#00bb00"/>
+    <rect class="ziA" height="19" width="17" y="35" x="117.5" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+  </g>
+  <g id="E2">
+    <text text-anchor="middle" font-size="10" y="30" x="170">E-2</text>
+    <rect class="ziA" height="19" width="17" y="35" x="164.5" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+    <rect class="chenA" height="19" width="17" y="35" x="181.5" stroke-width="2" stroke="#000000" fill="#00bb00"/>
+    <rect class="chenB" height="19" width="17" y="35" x="198.5" stroke-width="2" stroke="#000000" fill="#0080ff"/>
+    <rect class="chenB" height="19" width="17" y="35" x="215.5" stroke-width="2" stroke="#000000" fill="#0080ff"/>
+    <rect class="chenA" height="19" width="17" y="35" x="232.5" stroke-width="2" stroke="#000000" fill="#00bb00"/>
+    <rect class="ziA" height="19" width="17" y="35" x="249.5" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+  </g>
+  <g id="E3">
+    <text text-anchor="middle" font-size="10" y="30" x="300">E-3</text>
+    <rect class="ziA" height="19" width="17" y="35" x="294.5" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+    <rect class="chenA" height="19" width="17" y="35" x="311.5" stroke-width="2" stroke="#000000" fill="#00bb00"/>
+    <rect class="chenB" height="19" width="17" y="35" x="328.5" stroke-width="2" stroke="#000000" fill="#0080ff"/>
+    <rect class="chenB" height="19" width="17" y="35" x="345.5" stroke-width="2" stroke="#000000" fill="#0080ff"/>
+    <rect class="chenA" height="19" width="17" y="35" x="362.5" stroke-width="2" stroke="#000000" fill="#00bb00"/>
+    <rect class="ziA" height="19" width="17" y="35" x="379.5" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+  </g>
+  <g id="E4">
+    <text text-anchor="middle" font-size="10" y="30" x="432">E-4</text>
+    <rect class="ziA" height="19" width="17" y="35" x="426.5" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+    <rect class="chenA" height="19" width="17" y="35" x="443.5" stroke-width="2" stroke="#000000" fill="#00bb00"/>
+    <rect class="chenB" height="19" width="17" y="35" x="460.5" stroke-width="2" stroke="#000000" fill="#0080ff"/>
+    <rect class="chenB" height="19" width="17" y="35" x="477.5" stroke-width="2" stroke="#000000" fill="#0080ff"/>
+    <rect class="chenA" height="19" width="17" y="35" x="494.5" stroke-width="2" stroke="#000000" fill="#00bb00"/>
+    <rect class="ziA" height="19" width="17" y="35" x="511.5" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+  </g>
+  <g id="E5">
+    <text text-anchor="middle" font-size="10" y="94" x="38">E-5</text>
+    <rect class="ziA" height="19" width="17" y="99" x="32.5" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+    <rect class="chenA" height="19" width="17" y="99" x="49.5" stroke-width="2" stroke="#000000" fill="#00bb00"/>
+    <rect class="chenB" height="19" width="17" y="99" x="66.5" stroke-width="2" stroke="#000000" fill="#0080ff"/>
+    <rect class="chenB" height="19" width="17" y="99" x="83.5" stroke-width="2" stroke="#000000" fill="#0080ff"/>
+    <rect class="chenA" height="19" width="17" y="99" x="100.5" stroke-width="2" stroke="#000000" fill="#00bb00"/>
+    <rect class="ziA" height="19" width="17" y="99" x="117.5" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+  </g>
+  <g id="E6">
+    <text text-anchor="middle" font-size="10" y="94" x="170">E-6</text>
+    <rect class="ziA" height="19" width="17" y="99" x="164.5" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+    <rect class="chenA" height="19" width="17" y="99" x="181.5" stroke-width="2" stroke="#000000" fill="#00bb00"/>
+    <rect class="chenB" height="19" width="17" y="99" x="198.5" stroke-width="2" stroke="#000000" fill="#0080ff"/>
+    <rect class="chenB" height="19" width="17" y="99" x="215.5" stroke-width="2" stroke="#000000" fill="#0080ff"/>
+    <rect class="chenA" height="19" width="17" y="99" x="232.5" stroke-width="2" stroke="#000000" fill="#00bb00"/>
+    <rect class="ziA" height="19" width="17" y="99" x="249.5" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+  </g>
+  <g id="E7">
+    <text text-anchor="middle" font-size="10" y="94" x="300">E-7</text>
+    <rect class="ziA" height="19" width="17" y="99" x="294.5" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+    <rect class="chenA" height="19" width="17" y="99" x="311.5" stroke-width="2" stroke="#000000" fill="#00bb00"/>
+    <rect class="chenB" height="19" width="17" y="99" x="328.5" stroke-width="2" stroke="#000000" fill="#0080ff"/>
+    <rect class="chenB" height="19" width="17" y="99" x="345.5" stroke-width="2" stroke="#000000" fill="#0080ff"/>
+    <rect class="chenA" height="19" width="17" y="99" x="362.5" stroke-width="2" stroke="#000000" fill="#00bb00"/>
+    <rect class="ziA" height="19" width="17" y="99" x="379.5" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+  </g>
+  <g id="E8">
+    <text text-anchor="middle" font-size="10" y="94" x="432">E-8</text>
+    <rect class="ziA" height="19" width="17" y="99" x="426.5" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+    <rect class="chenA" height="19" width="17" y="99" x="443.5" stroke-width="2" stroke="#000000" fill="#00bb00"/>
+    <rect class="chenB" height="19" width="17" y="99" x="460.5" stroke-width="2" stroke="#000000" fill="#0080ff"/>
+    <rect class="chenB" height="19" width="17" y="99" x="477.5" stroke-width="2" stroke="#000000" fill="#0080ff"/>
+    <rect class="chenA" height="19" width="17" y="99" x="494.5" stroke-width="2" stroke="#000000" fill="#00bb00"/>
+    <rect class="ziA" height="19" width="17" y="99" x="511.5" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+  </g>
+  <g id="E9">
+    <text text-anchor="middle" font-size="10" y="162" x="38">E-9</text>
+    <rect class="ziA" height="19" width="17" y="167" x="32.5" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+    <rect class="chenA" height="19" width="17" y="167" x="49.5" stroke-width="2" stroke="#000000" fill="#00bb00"/>
+    <rect class="chenB" height="19" width="17" y="167" x="66.5" stroke-width="2" stroke="#000000" fill="#0080ff"/>
+    <rect class="chenB" height="19" width="17" y="167" x="83.5" stroke-width="2" stroke="#000000" fill="#0080ff"/>
+    <rect class="chenA" height="19" width="17" y="167" x="100.5" stroke-width="2" stroke="#000000" fill="#00bb00"/>
+    <rect class="ziA" height="19" width="17" y="167" x="117.5" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+  </g>
+  <g id="E10">
+    <text text-anchor="middle" font-size="10" y="162" x="170">E-10</text>
+    <rect class="ziA" height="19" width="17" y="167" x="164.5" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+    <rect class="chenA" height="19" width="17" y="167" x="181.5" stroke-width="2" stroke="#000000" fill="#00bb00"/>
+    <rect class="chenB" height="19" width="17" y="167" x="198.5" stroke-width="2" stroke="#000000" fill="#0080ff"/>
+    <rect class="chenB" height="19" width="17" y="167" x="215.5" stroke-width="2" stroke="#000000" fill="#0080ff"/>
+    <rect class="chenA" height="19" width="17" y="167" x="232.5" stroke-width="2" stroke="#000000" fill="#00bb00"/>
+    <rect class="ziA" height="19" width="17" y="167" x="249.5" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+  </g>
+  <g id="E11">
+    <text text-anchor="middle" font-size="10" y="162" x="300">E-11</text>
+    <rect class="ziA" height="19" width="17" y="167" x="294.5" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+    <rect class="chenA" height="19" width="17" y="167" x="311.5" stroke-width="2" stroke="#000000" fill="#00bb00"/>
+    <rect class="chenB" height="19" width="17" y="167" x="328.5" stroke-width="2" stroke="#000000" fill="#0080ff"/>
+    <rect class="chenB" height="19" width="17" y="167" x="345.5" stroke-width="2" stroke="#000000" fill="#0080ff"/>
+    <rect class="chenA" height="19" width="17" y="167" x="362.5" stroke-width="2" stroke="#000000" fill="#00bb00"/>
+    <rect class="ziA" height="19" width="17" y="167" x="379.5" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+  </g>
+  <g id="E12">
+    <text text-anchor="middle" font-size="10" y="162" x="432">E-12</text>
+    <rect class="ziA" height="19" width="17" y="167" x="426.5" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+    <rect class="chenA" height="19" width="17" y="167" x="443.5" stroke-width="2" stroke="#000000" fill="#00bb00"/>
+    <rect class="chenB" height="19" width="17" y="167" x="460.5" stroke-width="2" stroke="#000000" fill="#0080ff"/>
+    <rect class="chenB" height="19" width="17" y="167" x="477.5" stroke-width="2" stroke="#000000" fill="#0080ff"/>
+    <rect class="chenA" height="19" width="17" y="167" x="494.5" stroke-width="2" stroke="#000000" fill="#00bb00"/>
+    <rect class="ziA" height="19" width="17" y="167" x="511.5" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+  </g>
+  <g id="E13">
+    <text text-anchor="middle" font-size="10" y="240.5" x="78.5">E-13</text>
+    <rect class="ziA" height="19" width="17" y="245.5" x="73" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+    <rect class="chenA" height="19" width="17" y="245.5" x="90" stroke-width="2" stroke="#000000" fill="#00bb00"/>
+    <rect class="chenB" height="19" width="17" y="245.5" x="107" stroke-width="2" stroke="#000000" fill="#0080ff"/>
+    <rect class="ziA" height="19" width="17" y="245.5" x="124" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+    <rect class="wuA" height="19" width="17" y="245.5" x="141" stroke-width="2" stroke="#000000" fill="#ae57a4"/>
+    <rect class="wuA" height="19" width="17" y="245.5" x="158" stroke-width="2" stroke="#000000" fill="#ae57a4"/>
+    <rect class="ziA" height="19" width="17" y="245.5" x="175" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+    <rect class="chenB" height="19" width="17" y="245.5" x="192" stroke-width="2" stroke="#000000" fill="#0080ff"/>
+    <rect class="chenA" height="19" width="17" y="245.5" x="209" stroke-width="2" stroke="#000000" fill="#00bb00"/>
+    <rect class="ziA" height="19" width="17" y="245.5" x="226" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+  </g>
+  <g id="E14">
+    <text text-anchor="middle" font-size="10" y="240.5" x="324.5">E-14</text>
+    <rect class="ziA" height="19" width="17" y="245.5" x="319" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+    <rect class="chenA" height="19" width="17" y="245.5" x="336" stroke-width="2" stroke="#000000" fill="#00bb00"/>
+    <rect class="chenB" height="19" width="17" y="245.5" x="353" stroke-width="2" stroke="#000000" fill="#0080ff"/>
+    <rect class="ziA" height="19" width="17" y="245.5" x="370" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+    <rect class="wuA" height="19" width="17" y="245.5" x="387" stroke-width="2" stroke="#000000" fill="#ae57a4"/>
+    <rect class="wuA" height="19" width="17" y="245.5" x="404" stroke-width="2" stroke="#000000" fill="#ae57a4"/>
+    <rect class="ziA" height="19" width="17" y="245.5" x="421" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+    <rect class="chenB" height="19" width="17" y="245.5" x="438" stroke-width="2" stroke="#000000" fill="#0080ff"/>
+    <rect class="chenA" height="19" width="17" y="245.5" x="455" stroke-width="2" stroke="#000000" fill="#00bb00"/>
+    <rect class="ziA" height="19" width="17" y="245.5" x="472" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+  </g>
+  <g id="E15">
+    <text text-anchor="middle" font-size="10" y="306.5" x="79.5">E-15</text>
+    <rect class="ziA" height="19" width="17" y="311.5" x="74" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+    <rect class="chenA" height="19" width="17" y="311.5" x="91" stroke-width="2" stroke="#000000" fill="#00bb00"/>
+    <rect class="chenB" height="19" width="17" y="311.5" x="108" stroke-width="2" stroke="#000000" fill="#0080ff"/>
+    <rect class="ziA" height="19" width="17" y="311.5" x="125" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+    <rect class="wuA" height="19" width="17" y="311.5" x="142" stroke-width="2" stroke="#000000" fill="#ae57a4"/>
+    <rect class="wuA" height="19" width="17" y="311.5" x="159" stroke-width="2" stroke="#000000" fill="#ae57a4"/>
+    <rect class="ziA" height="19" width="17" y="311.5" x="176" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+    <rect class="chenB" height="19" width="17" y="311.5" x="193" stroke-width="2" stroke="#000000" fill="#0080ff"/>
+    <rect class="chenA" height="19" width="17" y="311.5" x="210" stroke-width="2" stroke="#000000" fill="#00bb00"/>
+    <rect class="ziA" height="19" width="17" y="311.5" x="227" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+  </g>
+  <g id="E16">
+    <text text-anchor="middle" font-size="10" y="306.5" x="325.5">E-16</text>
+    <rect class="ziA" height="19" width="17" y="311.5" x="320" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+    <rect class="chenA" height="19" width="17" y="311.5" x="337" stroke-width="2" stroke="#000000" fill="#00bb00"/>
+    <rect class="chenB" height="19" width="17" y="311.5" x="354" stroke-width="2" stroke="#000000" fill="#0080ff"/>
+    <rect class="ziA" height="19" width="17" y="311.5" x="371" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+    <rect class="wuA" height="19" width="17" y="311.5" x="388" stroke-width="2" stroke="#000000" fill="#ae57a4"/>
+    <rect class="wuA" height="19" width="17" y="311.5" x="405" stroke-width="2" stroke="#000000" fill="#ae57a4"/>
+    <rect class="ziA" height="19" width="17" y="311.5" x="422" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+    <rect class="chenB" height="19" width="17" y="311.5" x="439" stroke-width="2" stroke="#000000" fill="#0080ff"/>
+    <rect class="chenA" height="19" width="17" y="311.5" x="456" stroke-width="2" stroke="#000000" fill="#00bb00"/>
+    <rect class="ziA" height="19" width="17" y="311.5" x="473" stroke-width="2" stroke="#000000" fill="#ff8000"/>
+  </g>
+</g>
+</svg>
